@@ -21,6 +21,6 @@ on a server and ran at a certain interval. The results are also stored in best_p
 
 Note : 
 If you want to run the code 
-The path to chrome driver should be given on line
-The email address and password should be given on line
-The receiver email address shouls be mentioned on line
+The path to chrome driver should be given on 26th line
+The email address and password should be given on 122nd and 124th line
+The receiver email address shouls be mentioned on 135th line
