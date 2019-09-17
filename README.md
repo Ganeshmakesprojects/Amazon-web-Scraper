@@ -17,3 +17,10 @@ The code using selenium goes to https://amazon.in and searches for the wish list
 The top 3 search results are taken and sends an email along with links to the given email in send_email() function.
 If the search results change or the same product is at low price then an email is sent if this code is hosted
 on a server and ran at a certain interval. The results are also stored in best_products.txt
+
+
+Note : 
+If you want to run the code 
+The path to chrome driver should be given on line
+The email address and password should be given on line
+The receiver email address shouls be mentioned on line
