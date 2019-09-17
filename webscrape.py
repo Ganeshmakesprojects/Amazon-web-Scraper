@@ -23,8 +23,7 @@ class AmazonBot(object) :
 		self.profile = webdriver.FirefoxProfile()
 
 		self.options = Options()
-		self.driver = webdriver.Chrome("C:\\Users\\Ganesh\\Downloads\\chromedriver" , 
-										chrome_options=self.options)
+		self.driver = webdriver.Chrome( path = "chrome_driver path" , chrome_options=self.options)
 		self.driver.get(self.amazon_url)
 
 	def search_items(self) : 
@@ -120,9 +119,9 @@ def send_email(product_details , wishlist) :
 		smtp.starttls()
 		smtp.ehlo()
 
-		email_address = 'ganeshgood130y@gmail.com'
+		email_address = 'email_address@gmail.com'
 
-		smtp.login( email_address, '')
+		smtp.login( email_address, 'password')
 
 		subject = 'Amazon Price Report on current WishList'
 		body = "The new Offers on \n"
@@ -133,7 +132,7 @@ def send_email(product_details , wishlist) :
 
 		msg = f'Subject : {subject}\n\n{body}'
 
-		smtp.sendmail(email_address , 'yvm10@iitbbs.ac.in' , msg)
+		smtp.sendmail(email_address , 'receiver_email_address@gmail.com' , msg)
 
 
 if __name__ == '__main__' :
